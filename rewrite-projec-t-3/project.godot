@@ -11,7 +11,12 @@ config_version=5
 [application]
 
 config/name="Rewrite Projec T-3"
+<<<<<<< HEAD
 config/features=PackedStringArray("4.6", "GL Compatibility")
+=======
+run/main_scene="uid://bulnq7i07kwgn"
+config/features=PackedStringArray("4.7", "GL Compatibility")
+>>>>>>> 181e8ab925b951b5a72497901570ba0fe31db85e
 config/icon="res://icon.svg"
 
 [display]
@@ -58,6 +63,7 @@ skills={
 
 [rendering]
 
+textures/canvas_textures/default_texture_filter=0
 rendering_device/driver.windows="d3d12"
 renderer/rendering_method="gl_compatibility"
 renderer/rendering_method.mobile="gl_compatibility"
