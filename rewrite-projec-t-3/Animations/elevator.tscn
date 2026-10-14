@@ -1,0 +1,74 @@
+[gd_scene format=3 uid="uid://xaw23g3kwubr"]
+
+[ext_resource type="Texture2D" uid="uid://qr8jc5jroo4x" path="res://sci-fi game assets/tile set/scifi_animated_tileset_32.png" id="1_fdqv4"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_6334m"]
+atlas = ExtResource("1_fdqv4")
+region = Rect2(512, 0, 64, 64)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_khp36"]
+atlas = ExtResource("1_fdqv4")
+region = Rect2(576, 0, 64, 64)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_xjmme"]
+atlas = ExtResource("1_fdqv4")
+region = Rect2(640, 0, 64, 64)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_r5m1t"]
+atlas = ExtResource("1_fdqv4")
+region = Rect2(704, 0, 64, 64)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_e1acn"]
+atlas = ExtResource("1_fdqv4")
+region = Rect2(768, 0, 64, 64)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_smvqd"]
+atlas = ExtResource("1_fdqv4")
+region = Rect2(832, 0, 64, 64)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_m5iso"]
+atlas = ExtResource("1_fdqv4")
+region = Rect2(896, 0, 64, 64)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_eimvi"]
+atlas = ExtResource("1_fdqv4")
+region = Rect2(960, 0, 64, 64)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_nnvp3"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_6334m")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_khp36")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_xjmme")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_r5m1t")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_e1acn")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_smvqd")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_m5iso")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_eimvi")
+}],
+"loop": 1,
+"name": &"new_animation",
+"speed": 5.0
+}]
+
+[node name="elevator" type="Node2D" unique_id=1300443188]
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="." unique_id=801593110]
+sprite_frames = SubResource("SpriteFrames_nnvp3")
+animation = &"new_animation"
+frame_progress = 0.4597651
